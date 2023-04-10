@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jeux javascript</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center align-items-center">
+			<div class="col-3 text-center">
+				<h1 id="player-1">Player 1<span class="text-danger">.</span></h1>
+        <div class="card text-white bg-danger mb-3 mt-4" >
+          <h2>Global Score: <span id="score-0">0</span></h2>
+          <h3>Round Score: <span id="round-0">0</span></h3>
+        </div>
+				
+			</div>
+			<div class="col-6 text-center">
+        <div class="d-flex flex-column align-items-center">
+          <button id="next-party" class="btn btn-danger mb-2 " ><i class="fas fa-dice"></i>next game</button>
+            <img id="dice-img" src="./img/dices/dice-1.png" alt="Dice Image" class="mb-2 mt-4">
+
+          <button id="roll-dice-0" class="btn btn-primary mb-2 mt-4">Roll dice</button>
+          <button id="hold-0" class="btn btn-secondary mt-4">Hold</button>
+        </div>
+			</div>
+			<div class="col-3 text-center">
+				<h1 id="player-2">Player 2</h1>
+        <div class="card text-white bg-danger mb-3 mt-4">
+          <h2>Global Score: <span id="score-1">0</span></h2>
+				  <h3>Round Score: <span id="round-1">0</span></h3>
+        </div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<script src="app.js"></script>
+</body>
+</html>
